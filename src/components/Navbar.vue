@@ -7,10 +7,21 @@
     <!-- Display these buttons on larger screens -->
     <v-spacer></v-spacer>
     <v-btn class="navbutton" text @click="scroll('home')">Home</v-btn>    
+    <v-btn v-if="!isMobile" class="navbutton" text @click="scroll('about')">About Me</v-btn>
 
     <!-- Conditionally display these buttons on larger screens -->
-    <v-btn v-if="!isMobile" class="navbutton" text @click="scroll('about')">About Me</v-btn>
+        
     <v-btn v-if="!isMobile" class="navbutton" text @click="scroll('project')">My Projects</v-btn>
+    <v-btn v-if="!isMobile" icon @click="toggleMenu">
+      <v-icon>mdi-triangle-small-down</v-icon>
+    </v-btn>
+    <div v-if="!isMobile && showMenu" class="project-menu">
+      <!-- Display these buttons in the mobile menu -->
+      <v-btn class="navbutton" text @click="scrollAndClose('project')">All Projects</v-btn>
+      <v-btn class="navbutton" text @click="scrollAndClose('futur')">Work in progress</v-btn>
+      <v-btn class="navbutton" text @click="scrollAndClose('ai')">AI projects</v-btn>
+
+    </div>
     <v-btn v-if="!isMobile" class="navbutton" text @click="scroll('contact')">Contact</v-btn>
 
     <!-- Display a responsive menu button on smaller screens -->
@@ -22,7 +33,10 @@
     <div v-if="isMobile && showMenu" class="mobile-menu">
       <!-- Display these buttons in the mobile menu -->
       <v-btn class="navbutton" text @click="scrollAndClose('about')">About Me</v-btn>
-      <v-btn class="navbutton" text @click="scrollAndClose('project')">My Projects</v-btn>
+      <v-btn class="navbutton" text @click="scrollAndClose('project')">All Projects</v-btn>
+      <v-btn class="navbutton" text @click="scrollAndClose('futur')">Work in progress</v-btn>
+      <v-btn class="navbutton" text @click="scrollAndClose('ai')">AI projects</v-btn>
+
       <v-btn class="navbutton" text @click="scrollAndClose('contact')">Contact</v-btn>
     </div>
   </v-app-bar>
@@ -41,7 +55,7 @@ export default {
   methods: {
     scroll(refName) {
       const element = document.getElementById(refName);
-      element.scrollIntoView({ behavior: "smooth",  top: -100 });
+      element.scrollIntoView({ behavior: "smooth",  top: -1000 });
     },
     
     toggleMenu() {
@@ -82,14 +96,22 @@ export default {
   z-index: 1;
 }
 
+
 .mobile-menu .navbutton {
   color: white;
   text-align: left;
   margin: 8px 0;
 }
-
+.project-menu .navbutton {
+  color: white;
+  text-align: left;
+  margin: 8px 0;
+}
 @media screen and (max-width: 768px) {
   .mobile-menu {
+    display: flex;
+  }
+  .project-menu {
     display: flex;
   }
 }

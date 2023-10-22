@@ -167,7 +167,7 @@
             </v-btn>
             <h1 class="text" style="color: #43BC48;">PREVIOUS PROJECTS</h1>
           </v-row>
-          <p class="grey--text">See bellow my previous work experiences</p>
+          <p class="grey--text"><br />See bellow my previous work experiences</p>
         </v-container>
         
         <v-col md="3" offset-md="3">
@@ -268,7 +268,7 @@
           </a>
         </v-col>
         
-        <v-container id="project" style="text-align: center;">
+        <v-container id="futur" style="text-align: center;">
           <v-row class="justify-center">
             <v-btn class="" height= "48px" width="48px" icon>
                 <v-icon color="#43BC48" size="35">mdi-trending-up</v-icon>
@@ -276,7 +276,7 @@
             <h1 class="text" style="color: #43BC48;">WORK IN PROGRESS</h1>
             
           </v-row>
-          <p class="grey--text">See bellow my future and actual works</p>
+          <p class="grey--text"><br />See bellow my future and actual works</p>
         </v-container>
         
         
@@ -300,6 +300,58 @@
           <a href="https://www.instagram.com/comme.a.lamaison/">
             <v-btn color="#43BC48" dark text class="ml-n4">
               know more
+              <v-icon right>mdi-arrow-right</v-icon>
+            </v-btn>
+          </a>
+        </v-col>
+        <v-col md="3">
+           
+          <v-card
+            class="pa-2 py-12"
+            outlined
+            tile
+            color="#111111"
+          >
+            <v-img src="agricycle.jpeg" contain max-height=""></v-img>
+          </v-card>
+          <v-btn color="white" dark text class="ml-n4"> AgriCycle</v-btn><br />
+          <h4 class="grey--text ml-n4 " style="padding-left: 10px;">
+            The main goal of this project is to build a quadricycle from scratch.
+            This vehicle aims to give an adapted solution to farmers for their daily tasks. 
+            AgriCycle is between a tractor and an electric bike. It can be used for transport, work in the fields without using fossil energy.
+            
+          </h4>       
+        </v-col>
+        <v-container id="ai" style="text-align: center;">
+          <v-row class="justify-center">
+            <v-btn class="" height= "48px" width="48px" icon>
+                <v-icon color="#43BC48" size="35">mdi-head-sync</v-icon>
+            </v-btn>
+            <h1 class="text" style="color: #43BC48;">Artificial Intelligence projects</h1>
+            
+          </v-row>
+          <p class="grey--text"><br /> See bellow my work on Artificial Intelligence. <br /> Those works are deploy by Github pages</p>
+        </v-container>
+        
+        
+        <v-col md="3" offset-md="3">
+          
+          <v-card
+            class="pa-2 py-12"
+            outlined
+            tile
+            color="#111111"
+          >
+            <v-img src="CALM.png" contain max-height=""></v-img>
+          </v-card>
+          <v-btn color="white" dark text class="ml-n4"> C.A.L.M Jewelry </v-btn><br />
+          <h4 class="grey--text ml-n4 " style="padding-left: 10px;">
+            Parametric and Generative design of jewelry for C.A.L.M brand. 
+            
+          </h4>  
+          <a href="https://www.instagram.com/comme.a.lamaison/">
+            <v-btn color="#43BC48" dark text class="ml-n4">
+              test it
               <v-icon right>mdi-arrow-right</v-icon>
             </v-btn>
           </a>
