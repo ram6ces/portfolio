@@ -9,7 +9,7 @@
       <v-row>
         <v-col cols="12" sm="4">
             <v-btn icon>
-              <v-img src="RF.png" contain max-height="50"></v-img>
+              <v-img src="RF.webp" contain max-height="50"></v-img>
             </v-btn>
         </v-col>
         <v-col cols="12" sm="4"   >

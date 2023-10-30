@@ -8,15 +8,15 @@
       <v-row>
         
         <v-col md="4" offset-md="2">          
-          <v-img src="photoDVJ.jpg" contain min-width="300px"></v-img>
+          <v-img src="photoDVJ.webp" contain min-width="300px"></v-img>
         </v-col>
         <v-col md="4">
           <v-container min-width="400px">
               <h1 class="top" style="color: #43BC48; font-size: 35px;">Marc-Adrien MERCIER</h1>
               <h2 class="white--text">Creative Technologist and Maker</h2>
               <p class="grey--text">
-                I'm a Master of Science student in Creative Technology.<br />
-                I'm currently member of the De Vinci Innovation Innovation Center and its Resilient Futures research group.<br />
+                I'm a Master of Science student in Innovation and Creative Technology.<br />
+                I'm currently member of the De Vinci Innovation Center and its Resilient Futures research group.<br />
                 I interest myself in our production processes. My goal is to work on innovative solutions in order to help the industry to reduce its carbon footprint without reducing its production.<br />
                 As a Maker, I developped knowledge in engineering fields such as mechanics, design, manufacturing processes, electronics and computer science.<br />
               </p>
@@ -177,7 +177,7 @@
             tile
             color="#111111"
             >
-            <v-img src="insole.png" contain max-height=""></v-img>
+            <v-img src="insole.webp" contain max-height=""></v-img>
           </v-card>
       
           <v-btn color="white" dark text class="ml-n4"> Tailor made insole</v-btn><br />
@@ -196,7 +196,7 @@
             outlined
             tile
             color="#111111">
-            <v-img src="horuss1.png" contain ></v-img>
+            <v-img src="horus3D.webp" contain ></v-img>
           </v-card>
           <v-btn color="white" dark text class="ml-n4"> Horus S1</v-btn><br />
           <h4 class="grey--text ml-n4" style="padding-left: 10px;">
@@ -213,7 +213,7 @@
             outlined
             tile
             color="#111111">
-            <v-img src="stressbud.avif" contain max-height=""></v-img>
+            <v-img src="stressbud.webp" contain max-height=""></v-img>
           </v-card>
           <v-btn color="white" dark text class="ml-n4"> STRESSBUD</v-btn><br />
           <h4 class="grey--text ml-n4" style="padding-left: 10px;">
@@ -233,7 +233,7 @@
             outlined
             tile
             color="#111111">
-            <v-img src="longboard.png" contain ></v-img>
+            <v-img src="longboard.webp" contain ></v-img>
           </v-card>
           <v-btn color="white" dark text class="ml-n4"> Biocomposites Longboard </v-btn><br />
           <h4 class="grey--text ml-n4" style="padding-left: 10px;">
@@ -252,7 +252,7 @@
             tile
             color="#111111"
             >
-            <v-img src="aquaponic-platform.jpeg" contain max-height=""></v-img>
+            <v-img src="aquaponic-platform.webp" contain max-height=""></v-img>
           </v-card>
       
           <v-btn color="white" dark text class="ml-n4"> Aquaponic Platform </v-btn><br />
@@ -288,7 +288,7 @@
             tile
             color="#111111"
           >
-            <v-img src="CALM.png" contain max-height=""></v-img>
+            <v-img src="CALM.webp" contain max-height=""></v-img>
           </v-card>
           <v-btn color="white" dark text class="ml-n4"> C.A.L.M Jewelry </v-btn><br />
           <h4 class="grey--text ml-n4 " style="padding-left: 10px;">
@@ -312,7 +312,7 @@
             tile
             color="#111111"
           >
-            <v-img src="agricycle.jpeg" contain max-height=""></v-img>
+            <v-img src="agricycle.webp" contain max-height=""></v-img>
           </v-card>
           <v-btn color="white" dark text class="ml-n4"> AgriCycle</v-btn><br />
           <h4 class="grey--text ml-n4 " style="padding-left: 10px;">
@@ -322,7 +322,7 @@
             
           </h4>       
         </v-col>
-        <v-container id="ai" style="text-align: center;">
+        <v-container id="artificial" style="text-align: center;">
           <v-row class="justify-center">
             <v-btn class="" height= "48px" width="48px" icon>
                 <v-icon color="#43BC48" size="35">mdi-head-sync</v-icon>
@@ -330,7 +330,7 @@
             <h1 class="text" style="color: #43BC48;">Artificial Intelligence projects</h1>
             
           </v-row>
-          <p class="grey--text"><br /> See bellow my work on Artificial Intelligence. <br /> Those works are deploy by Github pages</p>
+          <p class="grey--text"><br /> See bellow my work on Artificial Intelligence. <br /> Those works are deploy with Github pages</p>
         </v-container>
         
         
@@ -342,14 +342,15 @@
             tile
             color="#111111"
           >
-            <v-img src="CALM.png" contain max-height=""></v-img>
+            <v-img src="MnistExamples.webp" contain max-height=""></v-img>
           </v-card>
-          <v-btn color="white" dark text class="ml-n4"> C.A.L.M Jewelry </v-btn><br />
+          <v-btn color="white" dark text class="ml-n4"> MNIST </v-btn><br />
           <h4 class="grey--text ml-n4 " style="padding-left: 10px;">
-            Parametric and Generative design of jewelry for C.A.L.M brand. 
+            This project is an HTML web page for handwritten digits recognition.
+            The model is trained with the MNIST dataset and the model is create with pytorch library.
             
           </h4>  
-          <a href="https://www.instagram.com/comme.a.lamaison/">
+          <a href="https://ram6ces.github.io/mnist/">
             <v-btn color="#43BC48" dark text class="ml-n4">
               test it
               <v-icon right>mdi-arrow-right</v-icon>
@@ -357,22 +358,7 @@
           </a>
         </v-col>
         <v-col md="3">
-           
-          <v-card
-            class="pa-2 py-12"
-            outlined
-            tile
-            color="#111111"
-          >
-            <v-img src="agricycle.jpeg" contain max-height=""></v-img>
-          </v-card>
-          <v-btn color="white" dark text class="ml-n4"> AgriCycle</v-btn><br />
-          <h4 class="grey--text ml-n4 " style="padding-left: 10px;">
-            The main goal of this project is to build a quadricycle from scratch.
-            This vehicle aims to give an adapted solution to farmers for their daily tasks. 
-            AgriCycle is between a tractor and an electric bike. It can be used for transport, work in the fields without using fossil energy.
-            
-          </h4>       
+                          
         </v-col>
           <v-col cols="12" class="padd topInverse">
 
@@ -407,7 +393,6 @@
                           </a>
                           <a href="mailto:marcadrien-mercier@orange.fr">
                             <v-icon class="ma-3" color="#43BC48" size="35">mdi-at</v-icon>
-
                           </a>
 
                           

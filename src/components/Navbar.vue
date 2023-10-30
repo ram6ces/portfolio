@@ -1,7 +1,7 @@
 <template>
   <v-app-bar app color="#111111" dark flat class="px-8">
     <v-btn icon>
-      <v-img src="RF.png" contain max-height="50px"></v-img>
+      <v-img src="RF.webp" contain max-height="50px"></v-img>
     </v-btn>
 
     <!-- Display these buttons on larger screens -->
@@ -12,16 +12,16 @@
     <!-- Conditionally display these buttons on larger screens -->
         
     <v-btn v-if="!isMobile" class="navbutton" text @click="scroll('project')">My Projects</v-btn>
-    <v-btn v-if="!isMobile" icon @click="toggleMenu">
-      <v-icon>mdi-triangle-small-down</v-icon>
-    </v-btn>
-    <div v-if="!isMobile && showMenu" class="project-menu">
+    <!-- <v-btn v-if="!isMobile" icon @click="toggleMenu">
+      <v-icon>mdi-arrow-right-bold-circle</v-icon>
+    </v-btn> -->
+    <!-- <div v-if="!isMobile && showMenu" class="project-menu"> -->
       <!-- Display these buttons in the mobile menu -->
-      <v-btn class="navbutton" text @click="scrollAndClose('project')">All Projects</v-btn>
+      <!-- <v-btn class="navbutton" text @click="scrollAndClose('project')">All Projects</v-btn>
       <v-btn class="navbutton" text @click="scrollAndClose('futur')">Work in progress</v-btn>
       <v-btn class="navbutton" text @click="scrollAndClose('ai')">AI projects</v-btn>
 
-    </div>
+    </div> --> 
     <v-btn v-if="!isMobile" class="navbutton" text @click="scroll('contact')">Contact</v-btn>
 
     <!-- Display a responsive menu button on smaller screens -->
@@ -35,7 +35,7 @@
       <v-btn class="navbutton" text @click="scrollAndClose('about')">About Me</v-btn>
       <v-btn class="navbutton" text @click="scrollAndClose('project')">All Projects</v-btn>
       <v-btn class="navbutton" text @click="scrollAndClose('futur')">Work in progress</v-btn>
-      <v-btn class="navbutton" text @click="scrollAndClose('ai')">AI projects</v-btn>
+      <v-btn class="navbutton" text @click="scrollAndClose('artificial')">AI projects</v-btn>
 
       <v-btn class="navbutton" text @click="scrollAndClose('contact')">Contact</v-btn>
     </div>
